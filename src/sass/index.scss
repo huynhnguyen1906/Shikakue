@@ -1,0 +1,92 @@
+@use "asset" as asset;
+
+body {
+  background: asset.$baseColor;
+  background-image: url("/public/img/stars.svg");
+}
+
+header {
+  .logo {
+    // border: solid 1px orange;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+  }
+  .goal {
+    border: solid 1px white;
+    width: 100%;
+    height: 100px;
+    background: asset.$baseBright;
+    p {
+      color: asset.$mainColor;
+      font-size: 1.6rem;
+      padding-top: 24px;
+      text-align: center;
+    }
+    .progress_bar {
+      width: 358px;
+      height: 25px;
+      border: solid 1px #000;
+      border-radius: 40px;
+      margin: 8px auto;
+      background: asset.$mainColor;
+      position: relative;
+      .inner_bar {
+        width: 242px;
+        height: 23px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background: #ffd12f;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      p {
+        color: #b58d00;
+        text-align: center;
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  .slider {
+    width: 358px;
+    height: 280px;
+    border: solid 2px asset.$mainColor;
+    border-radius: 30px;
+    background: asset.$baseBright;
+    margin: 0 auto;
+    p {
+      color: asset.$mainColor;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 24px;
+      text-align: center;
+      span {
+        display: inline-block;
+        width: 90px;
+        height: 50px;
+        border: solid 2px asset.$mainColor;
+        background: asset.$basePale;
+        line-height: 50px;
+        font-size: 2.6rem;
+        margin: 0 16px;
+      }
+    }
+    .inner_slider {
+      figure {
+        width: 280px;
+        height: 160px;
+        background: asset.$mainColor;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
