@@ -344,13 +344,16 @@ body {
   background-image: url("/public/img/stars.svg");
 }
 
+header figure {
+  width: 100%;
+  height: 100%;
+}
 header .logo {
   width: 100%;
-  height: 40px;
+  height: 50px;
   color: #fff;
 }
 header .goal {
-  border: solid 1px white;
   width: 100%;
   height: 100px;
   background: #253f72;
@@ -383,6 +386,8 @@ header .goal .progress_bar .inner_bar {
 header .goal .progress_bar p {
   color: #b58d00;
   text-align: center;
+  position: relative;
+  top: -25px;
 }
 
 main {
@@ -402,7 +407,7 @@ main .slider p {
   color: #fafafa;
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 24px;
+  padding: 20px;
   text-align: center;
 }
 main .slider p span {
@@ -419,8 +424,89 @@ main .slider .inner_slider figure {
   width: 280px;
   height: 160px;
   background: #fafafa;
+  margin: 0 auto;
 }
 main .slider .inner_slider figure img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+main .bottom {
+  width: 100%;
+  height: 200px;
+  margin-top: 60px;
+  background-image: url("/public/img/planet.png");
+}
+main .bottom figure {
+  position: relative;
+  bottom: 20px;
+  left: 270px;
+  width: 50px;
+  height: 40px;
+}
+main .bottom figure img {
+  width: 100%;
+}
+main .bottom .inner_wrapper {
+  width: 100%;
+  height: 112px;
+}
+main .bottom .inner_wrapper p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fafafa;
+}
+main .bottom .inner_wrapper a {
+  display: block;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  background: #fafafa;
+  border: solid 2px #00154d;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 4px 4px #253f72;
+}
+
+footer {
+  margin-top: 100px;
+}
+footer .navbar {
+  width: 100%;
+  height: 120px;
+  background-image: url("/public/img/nav_frame.svg");
+}
+footer .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .navbar ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 45px;
+  height: 25px;
+  font-size: 0.8rem;
+}
+footer .navbar ul li:nth-child(3) {
+  height: 35px;
+  margin-top: 0;
+}
+footer .navbar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #00154d;
+  text-align: center;
+}
+footer .navbar ul li img {
   width: 100%;
   height: 100%;
 }
