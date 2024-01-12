@@ -407,7 +407,7 @@ header figure img {
 header h1 {
   color: #00154d;
   font-size: 1.6rem;
-  margin-left: 120px;
+  margin-left: 88px;
   margin-bottom: 8px;
 }
 
@@ -415,113 +415,68 @@ main {
   width: 100%;
   height: 564px;
 }
-main .current {
-  width: 358px;
-  height: 208px;
-  border: solid 1.5px #fafafa;
-  background: #253f72;
-  border-radius: 15px;
-  margin: 16px auto;
-}
-main .current .flex_wrap {
+main .top_btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
 }
-main .current .flex_wrap .wrapper {
-  width: 140px;
-  height: 160px;
-  background: #fafafa;
-  padding-top: 16px;
-}
-main .current .flex_wrap .wrapper figure {
+main .top_btn h2 {
   width: 90px;
-  height: 115px;
-  margin: 0 auto;
-}
-main .current .flex_wrap .wrapper figure img {
-  width: 100%;
-  height: 100%;
-}
-main .current .flex_wrap .text {
-  width: 100px;
-  height: 100px;
-}
-main .current .flex_wrap .text h2, main .current .flex_wrap .text p {
+  height: 70px;
   font-size: 2.4rem;
   font-weight: bold;
   color: #fafafa;
+  margin: 16px;
 }
-main .current .flex_wrap .text span {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #fafafa;
-  padding-top: 32px;
+main .top_btn .ham {
+  width: 64px;
+  height: 60px;
+  margin-bottom: 8px;
 }
-main a {
-  display: block;
+main .top_btn .ham img {
+  width: 100%;
+  height: 100%;
+}
+main .section_wrap {
   width: 358px;
-  height: 84px;
-  line-height: 84px;
+  height: 870px;
   margin: 0 auto;
   background: #fafafa;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4b73a3;
-  text-align: center;
-  border-radius: 15px;
-  border: solid 1.5px #4b73a3;
 }
-main .progress {
-  width: 358px;
-  height: 770px;
-  margin: 16px auto;
-  padding-top: 20px;
-  border: solid 1.5px #fafafa;
-  border-radius: 15px;
-  background: #253f72;
+main .section_wrap .section {
+  width: 100%;
+  height: 112px;
+  background: #fafafa;
+  padding: 16px;
 }
-main .progress .section {
+main .section_wrap .section:nth-child(2n) {
+  background: #e9f3ff;
+}
+main .section_wrap .section .flex_wrap {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
-main .progress .section .num {
-  width: 50px;
-  height: 70px;
-  margin-left: 30px;
+main .section_wrap .section .flex_wrap h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00154d;
 }
-main .progress .section .num img {
+main .section_wrap .section .flex_wrap figure {
+  width: 214px;
+  height: 30px;
+}
+main .section_wrap .section .flex_wrap figure img {
   width: 100%;
   height: 100%;
 }
-main .progress .section .text {
-  margin-bottom: 16px;
-  margin-left: 8px;
-}
-main .progress .section .text h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-main .progress .section .text p {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-main .progress .section .fav {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 24px;
-  margin-left: 16px;
-}
-main .progress .section .fav img {
-  width: 100%;
-  height: 100%;
+main .section_wrap .section p {
+  font-size: 1.2rem;
+  color: #00154d;
+  margin-top: 8px;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 80px;
   position: fixed;
 }

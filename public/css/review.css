@@ -414,114 +414,42 @@ header h1 {
 main {
   width: 100%;
   height: 564px;
-}
-main .current {
-  width: 358px;
-  height: 208px;
-  border: solid 1.5px #fafafa;
-  background: #253f72;
-  border-radius: 15px;
-  margin: 16px auto;
-}
-main .current .flex_wrap {
+  margin-top: 64px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-top: 24px;
 }
-main .current .flex_wrap .wrapper {
-  width: 140px;
+main .button_wrap p {
+  width: 358px;
   height: 160px;
-  background: #fafafa;
-  padding-top: 16px;
-}
-main .current .flex_wrap .wrapper figure {
-  width: 90px;
-  height: 115px;
   margin: 0 auto;
-}
-main .current .flex_wrap .wrapper figure img {
-  width: 100%;
-  height: 100%;
-}
-main .current .flex_wrap .text {
-  width: 100px;
-  height: 100px;
-}
-main .current .flex_wrap .text h2, main .current .flex_wrap .text p {
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-main .current .flex_wrap .text span {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #fafafa;
-  padding-top: 32px;
-}
-main a {
-  display: block;
-  width: 358px;
-  height: 84px;
-  line-height: 84px;
-  margin: 0 auto;
-  background: #fafafa;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4b73a3;
   text-align: center;
-  border-radius: 15px;
-  border: solid 1.5px #4b73a3;
-}
-main .progress {
-  width: 358px;
-  height: 770px;
-  margin: 16px auto;
-  padding-top: 20px;
-  border: solid 1.5px #fafafa;
-  border-radius: 15px;
-  background: #253f72;
-}
-main .progress .section {
-  display: flex;
-  align-items: center;
-}
-main .progress .section .num {
-  width: 50px;
-  height: 70px;
-  margin-left: 30px;
-}
-main .progress .section .num img {
-  width: 100%;
-  height: 100%;
-}
-main .progress .section .text {
-  margin-bottom: 16px;
-  margin-left: 8px;
-}
-main .progress .section .text h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-main .progress .section .text p {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-main .progress .section .fav {
-  width: 24px;
-  height: 24px;
+  background: #fafafa;
+  background-image: url("/public/img/button_bg2.png");
   margin-bottom: 24px;
-  margin-left: 16px;
+  border-radius: 15px;
+  position: relative;
 }
-main .progress .section .fav img {
+main .button_wrap p a {
+  display: block;
   width: 100%;
   height: 100%;
+  line-height: 160px;
+  font-size: 2.2rem;
+  color: #00154d;
+  font-weight: bold;
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 15px;
+}
+main .button_wrap p img {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+main .button_wrap p:nth-child(2) {
+  background-image: url("/public/img/button_bg3.png");
 }
 
 footer {
-  margin-top: 50px;
-  position: fixed;
+  margin-top: 0;
 }
