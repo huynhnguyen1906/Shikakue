@@ -382,151 +382,200 @@ footer .navbar ul li img {
 
 body {
   background: #00154d;
-  background-image: url("/public/img/stars.svg");
 }
 
 header {
   width: 100%;
-  height: 150px;
-}
-header .logo {
-  width: 100%;
-  height: 50px;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: solid 2px #00154d;
   background: #fafafa;
-  padding-top: 12px;
 }
-header .logo figure {
-  width: 100px;
-  height: 30px;
-  margin: 0 auto;
+header figure {
+  margin-left: 24px;
+  margin-bottom: 8px;
+  width: 24px;
+  height: 21px;
 }
-header .logo figure img {
+header figure img {
   width: 100%;
   height: 100%;
 }
-header .goal {
-  width: 100%;
-  height: 100px;
-  background: #253f72;
-}
-header .goal p {
-  color: #fafafa;
+header h1 {
+  color: #00154d;
   font-size: 1.6rem;
-  padding-top: 24px;
-  text-align: center;
-}
-header .goal .progress_bar {
-  width: 358px;
-  height: 25px;
-  border: solid 1px #000;
-  border-radius: 40px;
-  margin: 8px auto;
-  background: #fafafa;
-  position: relative;
-}
-header .goal .progress_bar .inner_bar {
-  width: 242px;
-  height: 23px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  background: #ffd12f;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-header .goal .progress_bar p {
-  color: #b58d00;
-  text-align: center;
-  position: relative;
-  top: -25px;
+  margin-left: 120px;
+  margin-bottom: 8px;
 }
 
 main {
   width: 100%;
-  height: 400px;
-  margin-top: 30px;
+  height: 628px;
 }
-main .slider {
-  width: 358px;
-  height: 280px;
-  border: solid 2px #fafafa;
-  border-radius: 30px;
-  background: #253f72;
-  margin: 0 auto;
-}
-main .slider p {
-  color: #fafafa;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-}
-main .slider p span {
-  display: inline-block;
-  width: 90px;
-  height: 50px;
-  border: solid 2px #fafafa;
-  background: #4b73a3;
-  line-height: 50px;
-  font-size: 2.6rem;
-  margin: 0 16px;
-}
-main .slider .inner_slider {
-  width: 280px;
-  height: 155px;
+main .search_bar {
+  width: 100%;
+  height: 60px;
   background: #fafafa;
-  margin: 0 auto;
+  padding: 10px 35px;
+  position: relative;
+}
+main .search_bar a {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  bottom: 18px;
+  left: 50px;
+}
+main .search_bar a img {
+  width: 100%;
+  height: 100%;
+}
+main .search_bar input {
+  width: 320px;
+  height: 40px;
+  border-radius: 32px;
+  background: #f3f5f8;
+  text-align: center;
+  font-size: 1.3rem;
+  border: solid 1.5px #00154d;
+}
+main .search_bar input:-ms-input-placeholder {
+  color: #4b73a3;
+}
+main .search_bar input::placeholder {
+  color: #4b73a3;
+}
+main .search_bar input:focus {
+  outline: 0;
+}
+main .current {
+  width: 100%;
+  height: 180px;
+  margin-top: 16px;
+}
+main .current h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #fafafa;
+}
+main .current .wrapper {
+  width: 358px;
+  height: 160px;
+  background: #fafafa;
+  margin: 0 16px;
+  border-radius: 15px;
   padding-top: 16px;
 }
-main .slider .inner_slider figure {
+main .current .wrapper figure {
   width: 100px;
   height: 127px;
   background: #fafafa;
   margin: 0 auto;
 }
-main .slider .inner_slider figure img {
-  object-fit: contain;
+main .current .wrapper figure img {
   width: 100%;
   height: 100%;
 }
-main .bottom {
+main .level {
   width: 100%;
-  height: 200px;
-  margin-top: 60px;
-  background-image: url("/public/img/planet.png");
+  height: 160px;
+  margin-top: 24px;
 }
-main .bottom figure {
-  position: relative;
-  bottom: 45px;
-  left: 270px;
-  width: 80px;
-  height: 40px;
-}
-main .bottom figure img {
-  width: 100%;
-}
-main .bottom .inner_wrapper {
-  width: 100%;
-  height: 112px;
-}
-main .bottom .inner_wrapper p {
+main .level h2 {
+  font-size: 1.3rem;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: bold;
+  margin-bottom: 8px;
   color: #fafafa;
 }
-main .bottom .inner_wrapper a {
+main .level .level_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+main .level .level_wrap p {
+  width: 114px;
+  height: 140px;
+  border: solid 1.5px #fafafa;
+  background-color: #253f72;
+}
+main .level .level_wrap p a {
+  width: 100%;
+  height: 100%;
   display: block;
-  font-size: 2rem;
-  color: #00154d;
-  font-weight: bold;
+  font-size: 1.8rem;
+  color: #fafafa;
+  line-height: 140px;
   text-align: center;
-  width: 300px;
-  height: 80px;
-  line-height: 80px;
+}
+main .level .level_wrap .empty_box {
+  width: 114px;
+  height: 140px;
+  border: solid 1.5px #fafafa;
+  background-color: #253f72;
+  position: relative;
+}
+main .level .level_wrap .empty_box .line {
+  width: 179px;
+  transform: rotate(51deg);
+  transform-origin: top left;
+  border-top: 1.5px solid #fafafa;
+  position: absolute;
+  top: -1px;
+  left: 1px;
+}
+main .change {
+  width: 100%;
+  height: 160px;
+  margin-top: 16px;
+}
+main .change h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #fafafa;
+}
+main .change .change_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+main .change .change_wrap .card {
+  width: 114px;
+  height: 140px;
   background: #fafafa;
-  border: solid 2px #00154d;
-  border-radius: 15px;
+  border: solid 1.5px #253f72;
+  padding-top: 25px;
+}
+main .change .change_wrap .card:nth-child(3) {
+  padding-top: 54px;
+}
+main .change .change_wrap .card figure {
   margin: 0 auto;
-  box-shadow: 4px 4px #253f72;
+  background: #fafafa;
+}
+main .change .change_wrap .card figure.html {
+  width: 66px;
+  height: 85px;
+}
+main .change .change_wrap .card figure.shikisai {
+  width: 90px;
+  height: 90px;
+}
+main .change .change_wrap .card figure.it {
+  width: 100px;
+  height: 25px;
+}
+main .change .change_wrap .card figure a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .change .change_wrap .card figure a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 0;
 }

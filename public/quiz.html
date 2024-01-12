@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -20,33 +20,46 @@
     <meta property="og:type" content="website">
     <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
-    <title>シカクエ</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
   </head>
-  <body>
+  <body> 
     <header>
-      <div class="logo">
-        <figure><img src="img/logo_small.svg" alt="logo"></figure>
-      </div>
-      <div class="goal">
-        <p>1日の目標30問</p>
-        <div class="progress_bar"> 
-          <div class="inner_bar"></div>
-          <p>25問</p>
-        </div>
-      </div>
+      <figure><a href="index.html"> <img src="img/arrow.svg" alt=""></a></figure>
+      <h1>クイズ</h1>
     </header>
     <main>
-      <div class="slider">
-        <p>試験日まであと<span>30</span>日</p>
-        <div class="inner_slider"> 
-          <figure><img src="img/html5_logo.svg" alt="html logo"></figure>
+      <div class="search_bar"> <a href="#"><img src="img/search.svg" alt=""></a>
+        <input type="text" placeholder="他の資格を探す">
+      </div>
+      <div class="current"> 
+        <h2>選択中の資格</h2>
+        <div class="wrapper"> 
+          <figure><img src="img/html5_logo.svg" alt=""></figure>
         </div>
       </div>
-      <div class="bottom">
-        <figure><img src="img/mascot_small.svg" alt="mascot"></figure>
-        <div class="inner_wrapper"> 
-          <p>次かはSection2</p><a href="#">続きからやる</a>
+      <div class="level"> 
+        <h2>資格のレベル</h2>
+        <div class="level_wrap"> 
+          <p><a href="quiz_top.html">レベル1</a></p>
+          <p><a href="#"> レベル2</a></p>
+          <div class="empty_box"> 
+            <div class="line"> </div><a href="#"> </a>
+          </div>
+        </div>
+      </div>
+      <div class="change"> 
+        <h2>資格の変更</h2>
+        <div class="change_wrap"> 
+          <div class="card"> 
+            <figure class="html"> <a href="#"> <img src="img/html5_logo.svg" alt=""></a></figure>
+          </div>
+          <div class="card"> 
+            <figure class="shikisai"> <a href="#"> <img src="img/shikisai_logo.png" alt=""></a></figure>
+          </div>
+          <div class="card"> 
+            <figure class="it"> <a href="#"> <img src="img/itpass_logo.png" alt=""></a></figure>
+          </div>
         </div>
       </div>
     </main>

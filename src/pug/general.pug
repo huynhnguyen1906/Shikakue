@@ -1,0 +1,32 @@
+doctype html
+html(lang="ja")
+  head 
+    include _html_header
+    title General 
+    link(rel="stylesheet", href="css/general.css")
+  body 
+    header 
+      figure
+        a(href="quiz_top.html") 
+          img(src="img/arrow.svg", alt="")
+      h1 既存問題
+    main 
+      .current 
+        .flex_wrap 
+          figure 
+            img(src="img/html5_logo.svg", alt="")
+          .text 
+            h2 HTML5 
+            p Level1 
+            span  進行度 25%
+      a(href="#") 続きからやる
+      .progress 
+        figure 
+          img(src="img/section1.svg", alt="")
+        .text 
+          h3 HTML基礎
+          p 10問
+        figure 
+          img(src="img/favorite.svg", alt="")
+    include _main_footer
+    include _html_footer
