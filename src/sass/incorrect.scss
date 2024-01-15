@@ -10,6 +10,8 @@ header {
 	height: 60px;
 	display: flex;
 	align-items: flex-end;
+	position: fixed;
+	top: 0;
 	border-bottom: solid 2px asset.$baseColor;
 	background: asset.$mainColor;
 	figure {
@@ -32,6 +34,7 @@ header {
 
 main {
 	width: 100%;
+	margin-top: 60px;
 	height: 564px;
 	.top_btn {
 		display: flex;
