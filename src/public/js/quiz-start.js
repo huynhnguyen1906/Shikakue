@@ -26,7 +26,7 @@ window.onload = function () {
 			console.error("Error fetching data from API:", error)
 		})
 }
-console.log(questions)
+// console.log(questions)
 
 function loadQuestions() {
 	if (questions.length === 0 || currentQuestionIndex >= questions.length) {
@@ -36,7 +36,6 @@ function loadQuestions() {
 
 	const currentQuestion = questions[currentQuestionIndex]
 
-	// Kiểm tra xem currentQuestion có tồn tại hay không
 	if (!currentQuestion || !currentQuestion.hasOwnProperty("question")) {
 		console.error("Invalid question data:", currentQuestion)
 		return
@@ -47,7 +46,6 @@ function loadQuestions() {
 	const answerButtons = document.querySelectorAll(".answer")
 	const statusElement = document.querySelector(".status")
 
-	// Sử dụng questionIndex + 1 để hiển thị số câu hỏi hiện tại
 	questionNumberElement.innerText = `Q${currentQuestionIndex + 1}`
 	questionElement.innerText = currentQuestion.question
 	statusElement.innerText = `問数 ${currentQuestionIndex + 1}/${
@@ -60,8 +58,6 @@ function loadQuestions() {
 		button.removeEventListener("click", answerButtonClickHandler)
 		button.addEventListener("click", answerButtonClickHandler)
 	})
-
-	// Không cần tăng giá trị của currentQuestionNumber ở đây
 }
 
 function shuffleArray(array) {
@@ -109,14 +105,14 @@ function answerButtonClickHandler() {
 	currentQuestionIndex++
 
 	if (currentQuestionIndex < questions.length) {
-		console.log(
-			"correctQuestions:",
-			correctQuestions,
-			"incorrectQuestions:",
-			incorrectQuestions,
-			"incorrectAnswersText:",
-			incorrectAnswersText
-		)
+		// console.log(
+		// 	"correctQuestions:",
+		// 	correctQuestions,
+		// 	"incorrectQuestions:",
+		// 	incorrectQuestions,
+		// 	"incorrectAnswersText:",
+		// 	incorrectAnswersText
+		// )
 
 		loadQuestions()
 	} else {
@@ -256,4 +252,15 @@ startBtn.addEventListener("click", function () {
 			}
 		}, 1000)
 	}, 5)
+})
+
+const backButton = document.querySelector(".back-btn")
+
+backButton.addEventListener("click", function () {
+	window.location.href = "/"
+})
+const nextButton = document.querySelector(".next-btn")
+
+nextButton.addEventListener("click", function () {
+	window.location.reload()
 })

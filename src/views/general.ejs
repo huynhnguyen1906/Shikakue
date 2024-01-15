@@ -39,7 +39,7 @@
 	<body>
 		<header>
 			<figure>
-				<a href="#"> <img src="/images/arrow.svg" alt="" /></a>
+				<a href="/quiz-top"> <img src="/images/arrow.svg" alt="" /></a>
 			</figure>
 			<!-- go to quiz_top.ejs -->
 			<h1>既存問題</h1>
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#">続きからやる</a>
+			<a href="/quiz-start">続きからやる</a>
 			<div class="progress">
 				<div class="section">
 					<figure class="num"><img src="/images/section1.svg" alt="" /></figure>
@@ -145,11 +145,13 @@
 						>
 					</li>
 					<li>
-						<a href="#"><img src="/images/home.svg" alt="home" /></a>
+						<a href="/"><img src="/images/home.svg" alt="home" /></a>
 						<!-- go to index.ejs -->
 					</li>
 					<li>
-						<a href="#"><img src="/images/quiz.svg" alt="quiz" />クイズ</a>
+						<a href="/quiz"
+							><img src="/images/quiz_selected.svg" alt="quiz" />クイズ</a
+						>
 						<!-- go to quiz.ejs -->
 					</li>
 					<li>
@@ -160,6 +162,6 @@
 				</ul>
 			</div>
 		</footer>
-		<script src=""></script>
+		<script src="/js/general.js"></script>
 	</body>
 </html>

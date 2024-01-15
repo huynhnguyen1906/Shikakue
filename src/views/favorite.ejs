@@ -39,7 +39,7 @@
 	<body>
 		<header>
 			<figure>
-				<a href="#"> <img src="/images/arrow.svg" alt="" /></a>
+				<a href="/quiz-top"> <img src="/images/arrow.svg" alt="" /></a>
 			</figure>
 			<!-- go to quiz_top.ejs -->
 			<h1>オリジナルとお気に入り</h1>
@@ -47,7 +47,7 @@
 		<main>
 			<div class="btn_wrap">
 				<a class="fav" href="#">お気に入り問題集</a>
-				<a class="ori" href="#">オリジナル問題集</a>
+				<a class="ori" href="/original">オリジナル問題集</a>
 				<!-- go to original.ejs -->
 			</div>
 			<h2>HTML5 Level1</h2>
@@ -116,11 +116,13 @@
 						>
 					</li>
 					<li>
-						<a href="#"><img src="/images/home.svg" alt="home" /></a>
+						<a href="/"><img src="/images/home.svg" alt="home" /></a>
 						<!-- go to index.ejs -->
 					</li>
 					<li>
-						<a href="#"><img src="/images/quiz.svg" alt="quiz" />クイズ</a>
+						<a href="/quiz"
+							><img src="/images/quiz_selected.svg" alt="quiz" />クイズ</a
+						>
 						<!-- go to quiz.ejs -->
 					</li>
 					<li>
@@ -131,6 +133,6 @@
 				</ul>
 			</div>
 		</footer>
-		<script src=""></script>
+		<script src="js/favorite.js"></script>
 	</body>
 </html>

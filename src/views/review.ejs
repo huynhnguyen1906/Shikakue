@@ -39,16 +39,16 @@
 	<body>
 		<header>
 			<figure>
-				<a href=""> <img src="/images/arrow.svg" alt="" /></a>
+				<a href="/quiz-top"> <img src="/images/arrow.svg" alt="" /></a>
 				<!-- go to quiz_top.ejs -->
 			</figure>
 			<h1>復習問題</h1>
 		</header>
 		<main>
 			<div class="button_wrap">
-				<p><a href="">正答率の低い問題集</a></p>
+				<p><a href="/low-rate">正答率の低い問題集</a></p>
 				<!-- go to lowrate.ejs -->
-				<p><a href="#">不正解だった問題</a></p>
+				<p><a href="/incorrect">不正解だった問題</a></p>
 				<!-- go to incorrect.ejs -->
 			</div>
 		</main>
@@ -64,11 +64,13 @@
 						>
 					</li>
 					<li>
-						<a href="#"><img src="/images/home.svg" alt="home" /></a>
+						<a href="/"><img src="/images/home.svg" alt="home" /></a>
 						<!-- go to index.ejs -->
 					</li>
 					<li>
-						<a href="#"><img src="/images/quiz.svg" alt="quiz" />クイズ</a>
+						<a href="/quiz"
+							><img src="/images/quiz_selected.svg" alt="quiz" />クイズ</a
+						>
 						<!-- go to quiz.ejs -->
 					</li>
 					<li>
