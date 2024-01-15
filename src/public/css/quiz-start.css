@@ -398,6 +398,7 @@ footer .navbar ul li a {
 	height: 100%;
 	color: #00154d;
 	text-align: center;
+	text-decoration: none;
 }
 footer .navbar ul li img {
 	width: 100%;
