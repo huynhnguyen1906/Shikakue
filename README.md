@@ -1,17 +1,20 @@
 # シカクエ
 
-## 説明
+## 概要
+
+シカクエは、HTML5 検定の資格勉強をサポートするためのアプリケーションです。忙しい仕事や学業に追われる人々が、隙間時間を活用して楽しく資格勉強ができるように設計されています。
+
+## 技術
 
 これは、npm を使用した JavaScript プロジェクトです。Express.js を使用したウェブアプリケーションであり、データストレージには MySQL を使用しています。
 
 ## インストール
 
-1. リポジトリをクローン: `git clone <https://github.com/SHIKAKUI-html5/SHIKAKUE.git>`
+1. リポジトリをクローン: `git clone <https://github.com/SHIKAKUE-html5/SHIKAKUE.git>`
 2. 依存関係をインストール: `npm install`
 3. `.env.example`を`.env`にコピーし、環境変数を入力してください。
 4. SCSS を CSS にコンパイルする: `gulp sass`
-5. データベースのマイグレーションを実行: `npm run migrate`
-6. サーバーを起動: `npm start`
+5. サーバーを起動: `npm start`
 
 ## プロジェクト構造
 
